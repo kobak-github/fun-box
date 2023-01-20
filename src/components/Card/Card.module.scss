@@ -9,17 +9,22 @@
   height: 480px;
   margin-bottom: 14px;
   background-color: $bg;
-  padding: 21px 16px 16px 48px;
+  
   border: 4px solid $default;
-  border-radius: 0 12px 12px;
+  border-radius: 80px 12px 12px;
   position: relative;
-  overflow: hidden;
   cursor: pointer;
   transition: all .3s;
 }
 
 .item{
   border-color: $default;
+  .cutCorner{
+    border-color: $default;
+    &:before, &:after{
+      border-color: $default;
+    }
+  }
   .blockWeight{
     background-color: $default;
   }
@@ -28,6 +33,44 @@
     .blockWeight{
       background-color: $defhover;
     }
+    .cutCorner{
+      border-color: $defhover;
+      &:before, &:after{
+        border-color: $defhover;
+      }
+    }
+  }
+}
+
+.cutCorner{
+  position: absolute;
+  background-color: $bg;
+  width: 64px;
+  height: 64px;
+  top: 9px;
+  left: 9px;
+  border-top: 3px solid $default;
+  transform: rotate(-45deg);
+  transition: all .3s;
+  &:before, &:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $bg;
+    transition: all .3s;
+  }
+  &:before{
+    top:0;
+    left:0;
+    border-top:4px solid $default;
+    transform:rotate(45deg) translate(45.6%, -23%);
+  }
+  &:after{
+    left: 0;
+    bottom:0;
+    border-bottom: 4px solid $default;
+    transform:rotate(135deg) translate(50.6%, 19%);
   }
 }
 
@@ -36,12 +79,32 @@
   .blockWeight{
     background-color: $selected;
   }
+  .cutCorner{
+    border-color: $selected;
+    &:before, &:after{
+      border-color: $selected;
+    }
+  }
   &:hover{
     border-color: $selhover;
     .blockWeight{
       background-color: $selhover;
     }
+    .cutCorner{
+      border-color: $selhover;
+      &:before, &:after{
+        border-color: $selhover;
+      }
+    }
   }
+}
+
+.itemBlock{
+  position: relative;
+  padding: 21px 16px 16px 48px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .topText{
@@ -144,5 +207,11 @@
   }
   .img{
     opacity: .3;
+  }
+  .cutCorner{
+    border-color: $gray;
+    &:before, &:after{
+      border-color: $gray;
+    }
   }
 }

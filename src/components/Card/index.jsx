@@ -46,15 +46,18 @@ const Card = ({
   return (
     <div className={styles.block}>
       <div className={itemStyle(selected)} onClick={() => setSelected(!selected)}>
-        <p className={styles.topText}>{company}</p>
-        <h1 className={styles.title}>{title}</h1>
-        <h3 className={styles.subTitle}>{subtitle}</h3>
-        <p className={styles.text}>{portion}</p>
-        <p className={styles.text}>{promo}</p>
-        <img src={imgUrl} alt="img" className={styles.img} />
-        <div className={styles.blockWeight}>
-          <h1 className={styles.weight}>{weight}</h1>
-          <span className={styles.weightText}>кг</span>
+        <div className={styles.cutCorner}></div>
+        <div className={styles.itemBlock}>
+          <p className={styles.topText}>{company}</p>
+          <h1 className={styles.title}>{title}</h1>
+          <h3 className={styles.subTitle}>{subtitle}</h3>
+          <p className={styles.text}>{portion}</p>
+          <p className={styles.text}>{promo}</p>
+          <img src={imgUrl} alt="img" className={styles.img} />
+          <div className={styles.blockWeight}>
+            <h1 className={styles.weight}>{weight}</h1>
+            <span className={styles.weightText}>кг</span>
+          </div>
         </div>
       </div>
       {textDescrip(selected)}
