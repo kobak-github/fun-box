@@ -1,0 +1,37 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "imgUrl": "./images/product/cat.png",
+      "company": "Сказочное заморское яство",
+      "title": "Нямушка",
+      "description": "Печень утки разварная с артишоками.",
+      "subtitle": "с фуа-гра",
+      "portions": { "portion": "10 порций", "promo": "мышь в подарок" },
+      "weight": 0.5,
+      "quantity": 0
+    },
+    {
+      "id": 2,
+      "imgUrl": "./images/product/cat.png",
+      "company": "Сказочное заморское яство",
+      "title": "Нямушка",
+      "description": "Головы щучьи с чесноком да свежайшая сёмгушка.",
+      "subtitle": "с рыбой",
+      "portions": { "portion": "40 порций", "promo": "2 мыши в подарок" },
+      "weight": 2,
+      "quantity": 20
+    },
+    {
+      "id": 3,
+      "imgUrl": "./images/product/cat.png",
+      "company": "Сказочное заморское яство",
+      "title": "Нямушка",
+      "description": "Филе из цыплят с трюфелями в бульоне.",
+      "subtitle": "с курой",
+      "portions": { "portion": "100 порций", "promo": "5 мышей в подарок заказчик доволен" },
+      "weight": 5,
+      "quantity": 5
+    }
+  ]
+}

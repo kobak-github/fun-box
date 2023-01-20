@@ -1,0 +1,148 @@
+@import "../../scss/variables";
+
+.block{
+  margin: 20px 10px;
+}
+
+.item, .itemDisable, .itemSelected{  
+  width: 320px;
+  height: 480px;
+  margin-bottom: 14px;
+  background-color: $bg;
+  padding: 21px 16px 16px 48px;
+  border: 4px solid $default;
+  border-radius: 0 12px 12px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.item{
+  border-color: $default;
+  .blockWeight{
+    background-color: $default;
+  }
+  &:hover{
+    border-color: $defhover;
+    .blockWeight{
+      background-color: $defhover;
+    }
+  }
+}
+
+.itemSelected{
+  border-color: $selected;
+  .blockWeight{
+    background-color: $selected;
+  }
+  &:hover{
+    border-color: $selhover;
+    .blockWeight{
+      background-color: $selhover;
+    }
+  }
+}
+
+.topText{
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: $text
+}
+
+.title{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 5px;
+}
+
+.subTitle{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 15px;  
+}
+
+.text{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text;
+  width: 130px;
+}
+
+.bottomText{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: $white;
+  text-align: center;
+}
+
+.img{
+  width: 368px;
+  position: absolute;
+  left: -30px;
+  bottom: -100px;
+}
+
+.blockWeight{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  right: 16px;
+  bottom: 16px;
+  align-items: center;
+  background-color: $default;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  transition: all .3s;
+  z-index: 1;
+}
+
+.weight{
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.weightText{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.link{
+  color: $default;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  cursor: pointer;
+}
+
+.itemDisable{
+  border-color: $gray;
+  .blockWeight{
+    background-color: $gray;
+  }
+  .topText, .title, .subTitle, .text{
+    color: $gray;
+  }
+  .bottomText{
+    color: #ff6;
+  }
+  .img{
+    opacity: .3;
+  }
+}
