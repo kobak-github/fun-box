@@ -202,8 +202,12 @@
   .topText, .title, .subTitle, .text{
     color: $gray;
   }
-  .bottomText{
+  .bottomTextDisable{
     color: #ff6;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
   }
   .img{
     opacity: .3;

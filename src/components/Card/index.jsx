@@ -38,7 +38,7 @@ const Card = ({
         quantity > 0 ? (
           <p className={styles.bottomText}>{description}</p>
         ) : (
-          <p className={styles.bottomText}>Печалька, {subtitle} закончился.</p>
+          <p className={styles.bottomTextDisable}>Печалька, {subtitle} закончился.</p>
         );
     }
     return text;
