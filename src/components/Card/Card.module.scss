@@ -202,13 +202,7 @@
   .topText, .title, .subTitle, .text{
     color: $gray;
   }
-  .bottomTextDisable{
-    color: #ff6;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 15px;
-    text-align: center;
-  }
+  
   .img{
     opacity: .3;
   }
@@ -218,4 +212,11 @@
       border-color: $gray;
     }
   }
+}
+.bottomTextDisable{
+  color: #ff6;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
 }
