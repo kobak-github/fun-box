@@ -6,7 +6,7 @@ import './scss/app.scss';
 function App() {
   const [item, setItem] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:3001/product').then((res) => {
+    axios.get('https://63ca85274f53a0042024e104.mockapi.io/product').then((res) => {
       setItem(res.data);
     });
   }, []);
